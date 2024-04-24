@@ -1,0 +1,77 @@
+@font-face {
+    font-family: "Outfit";
+    src: url(./fonts/Outfit/Outfit-VariableFont_wght.ttf);
+}
+:root {
+  --laranja-indgame: #FF8D00;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.container-grid {
+    width: 80vw;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+.banner {
+    height: 120vh;
+    background-repeat: no-repeat;
+    /* background-position: 150% 100%; */
+    background-size: 100%;
+    background-image: url(img/banner.png);
+}
+
+header {
+    height: 190px;
+}
+
+header button{
+    display: none;
+}
+
+
+header .container-grid {
+    height: 100%;
+    width: 1000px;
+}
+header img {
+    padding-left: 20%;
+}
+
+.menu {     
+    width: 700px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 55px;
+}
+
+.menu a {
+    font-size: 18px;
+    color: white;
+    font-family: "Outfit";
+    text-decoration: underline transparent;
+    text-decoration-thickness: 2px;
+    transition: text-decoration 500ms ease-in-out;
+}
+.menu a:hover {
+
+    text-decoration: underline white;
+
+   
+}
+
+#Sobre {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 25%;
+    text-align: center; 
+    height: 800px;
+        
+}
