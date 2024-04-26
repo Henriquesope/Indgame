@@ -1,6 +1,7 @@
 @font-face {
     font-family: "Outfit";
     src: url(./fonts/Outfit/Outfit-VariableFont_wght.ttf);
+
 }
 :root {
   --laranja-indgame: #FF8D00;
@@ -67,11 +68,165 @@ header img {
    
 }
 
-#Sobre {
+#Sobre { 
+    padding: 100px;
+    padding-top: 250px;
     display: flex;
+    justify-content: space-around;
+    padding-right: 100px;
+    padding-left: 200px;
+}
+
+h2 {
+    font-family: "Outfit";
+    font-size: 35px;
+    color: var(--laranja-indgame);
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+#Sobre p {
+    font-size: 20px;
+    text-align: center;
+    font-family: "Outfit";
+    line-height: 1.5;
+    width: 500px;
+}
+
+#Sobre img {
+   height: 450px;
+   width: 480px;
+}
+#Sobre span {
+    color: #FF8D00;
+    font-weight: bold;
+}
+
+#historia {
+    padding-right: 200px;
+    padding-left: 200px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+#historia span{
+    color: var(--laranja-indgame);
+    font-weight: bold;
+}
+
+#historia p{
+    font-family: "Outfit";
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    width: 500px;
+}
+
+#mvv {
+    width: 1200px;
+    height: 250px;
+    margin: auto;
+}
+
+.text-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text-column {
+    width: 300px;
+}
+.text-column-v {
+    width: 300px;
+}
+.text-column-ss {
+    width: 300px;
+}
+
+
+.text-column p{
+    font-family: "Outfit";
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    width: ;
+    
+}
+
+.text-column-v p{
+    font-family: "Outfit";
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    
+}
+
+.text-column-ss p{
+    font-family: "Outfit";
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.5;
+    
+}
+
+
+.text-column span{
+    color: #FF8D00;
+    font-weight: bold;
+}
+
+.text-column-v span{
+    color: #FF8D00;
+    font-weight: bold;
+}
+
+.text-column-ss span{
+    color: #FF8D00;
+    font-weight: bold;
+}
+
+
+.card {
+    height: 400px;
+    width: 600px;
+    background-color: var(--laranja-indgame);
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    padding: 100px 25%;
-    text-align: center; 
-    height: 800px;
-        
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+
+.card p {
+    color: white;
+    font-family: "Outfit";
+    font-size: 16px;
+    padding: 7%;
+    text-align: left;
+}
+
+#animall p {
+    color: #FF8D00;
+}
+
+#animall img {
+    padding-top: 30px;
+    width: 338px;
+    height: 87.5px;
+  
+}
+
+
+
+
+
+#animall.card{
+    background-color: white;
+    border: 6px solid #FF8D00;
+
 }
