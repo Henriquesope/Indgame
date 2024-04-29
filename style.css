@@ -3,24 +3,28 @@
     src: url(./fonts/Outfit/Outfit-VariableFont_wght.ttf);
 
 }
+
 :root {
-  --laranja-indgame: #FF8D00;
+    --laranja-indgame: #FF8D00;
 
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 .container-grid {
     width: 80vw;
     max-width: 1400px;
     margin: 0 auto;
 }
+
 .banner {
     height: 120vh;
     background-repeat: no-repeat;
@@ -33,7 +37,7 @@ header {
     height: 190px;
 }
 
-header button{
+header button {
     display: none;
 }
 
@@ -42,11 +46,12 @@ header .container-grid {
     height: 100%;
     width: 1000px;
 }
+
 header img {
     padding-left: 20%;
 }
 
-.menu {     
+.menu {
     width: 700px;
     display: flex;
     justify-content: space-between;
@@ -61,14 +66,15 @@ header img {
     text-decoration-thickness: 2px;
     transition: text-decoration 500ms ease-in-out;
 }
+
 .menu a:hover {
 
     text-decoration: underline white;
 
-   
+
 }
 
-#Sobre { 
+#Sobre {
     padding: 100px;
     padding-top: 250px;
     display: flex;
@@ -95,9 +101,10 @@ h2 {
 }
 
 #Sobre img {
-   height: 450px;
-   width: 480px;
+    height: 450px;
+    width: 480px;
 }
+
 #Sobre span {
     color: #FF8D00;
     font-weight: bold;
@@ -111,12 +118,12 @@ h2 {
     justify-content: center;
 }
 
-#historia span{
+#historia span {
     color: var(--laranja-indgame);
     font-weight: bold;
 }
 
-#historia p{
+#historia p {
     font-family: "Outfit";
     text-align: center;
     font-size: 20px;
@@ -138,95 +145,166 @@ h2 {
 .text-column {
     width: 300px;
 }
+
 .text-column-v {
     width: 300px;
 }
+
 .text-column-ss {
     width: 300px;
 }
 
 
-.text-column p{
+.text-column p {
     font-family: "Outfit";
     text-align: center;
     font-size: 20px;
     line-height: 1.5;
     width: ;
-    
+
 }
 
-.text-column-v p{
+.text-column-v p {
     font-family: "Outfit";
     text-align: center;
     font-size: 20px;
     line-height: 1.5;
-    
+
 }
 
-.text-column-ss p{
+.text-column-ss p {
     font-family: "Outfit";
     text-align: center;
     font-size: 20px;
     line-height: 1.5;
+
+}
+
+
+.text-column span {
+    color: #FF8D00;
+    font-weight: bold;
+}
+
+.text-column-v span {
+    color: #FF8D00;
+    font-weight: bold;
+}
+
+.text-column-ss span {
+    color: #FF8D00;
+    font-weight: bold;
+}
+
+.container-cards {
+  padding-bottom: 40px;
+}
+.lista-cards {
+    display: flex;
+    gap: 60px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    border-radius: 75px;
+    background-color: #FF8D00;
+    display: flex;
+    align-items: center;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+#animall.container {
+    background-color: white;
+    border: 6px solid #FF8D00  ;
     
 }
 
-
-.text-column span{
-    color: #FF8D00;
-    font-weight: bold;
+.image {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    margin: 0 auto;
+   
+}
+    
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border-radius: 75px;
+    border: 6px solid var(--laranja-indgame);
+    transition: .5s ease;
+    background-color:var(--laranja-indgame);
 }
 
-.text-column-v span{
-    color: #FF8D00;
-    font-weight: bold;
+.container:hover .overlay {
+    opacity: 1;
 }
 
-.text-column-ss span{
-    color: #FF8D00;
-    font-weight: bold;
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-family: "Outfit";
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
+
+
+
+
 
 
 .card {
-    height: 400px;
-    width: 600px;
-    background-color: var(--laranja-indgame);
-    border-radius: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
-}
-
-
-.card p {
-    color: white;
-    font-family: "Outfit";
-    font-size: 16px;
-    padding: 7%;
-    text-align: left;
-}
-
-#animall p {
-    color: #FF8D00;
-}
-
-#animall img {
-    padding-top: 30px;
-    width: 338px;
-    height: 87.5px;
+    position: relative;
+    width: 50%;
+  }
   
-}
-
-
-
-
-
-#animall.card{
-    background-color: white;
-    border: 6px solid #FF8D00;
-
-}
+  .image1 {
+    display: block;
+    width: 20%;
+    height: auto;
+  }
+  
+  .over {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  }
+  
+  .card:hover .over {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
