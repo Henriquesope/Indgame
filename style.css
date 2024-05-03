@@ -74,7 +74,7 @@ header img {
 
 }
 
-#Sobre {
+#sobre {
     padding: 100px;
     padding-top: 250px;
     display: flex;
@@ -92,7 +92,7 @@ h2 {
     padding-bottom: 20px;
 }
 
-#Sobre p {
+#sobre p {
     font-size: 20px;
     text-align: center;
     font-family: "Outfit";
@@ -100,12 +100,12 @@ h2 {
     width: 500px;
 }
 
-#Sobre img {
+#sobre img {
     height: 450px;
     width: 480px;
 }
 
-#Sobre span {
+#sobre span {
     color: #FF8D00;
     font-weight: bold;
 }
@@ -196,9 +196,14 @@ h2 {
 }
 
 .container-cards {
-  padding-bottom: 90px;
+    padding-bottom: 90px;
 
 }
+
+.container-cards h2 {
+    padding-bottom: 40px;
+}
+
 .lista-cards {
     display: flex;
     gap: 60px;
@@ -220,8 +225,8 @@ h2 {
 
 #animall.container {
     background-color: white;
-    border: 6px solid #FF8D00  ;
-    
+    border: 6px solid #FF8D00;
+
 }
 
 .image {
@@ -229,9 +234,9 @@ h2 {
     align-items: center;
     width: 30%;
     margin: 0 auto;
-   
+
 }
-    
+
 .overlay {
     position: absolute;
     top: 0;
@@ -244,7 +249,7 @@ h2 {
     border-radius: 75px;
     border: 6px solid var(--laranja-indgame);
     transition: .5s ease;
-    background-color:var(--laranja-indgame);
+    background-color: var(--laranja-indgame);
 }
 
 .container:hover .overlay {
@@ -253,15 +258,15 @@ h2 {
 
 
 
- #animall .overlay{
+#animall .overlay {
     background-color: #ffffff;
     border: none;
- }
+}
 
 
 
 
- #animall .texto {
+#animall .texto {
     color: var(--laranja-indgame);
     font-size: 20px;
     position: absolute;
@@ -286,6 +291,7 @@ h2 {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+
 .text3 {
     color: white;
     font-size: 20px;
@@ -313,7 +319,14 @@ h2 {
     padding-top: 50px;
 }
 
+.avaliacoes-usuarios h2 {
+    padding-top: 40px;
+}
 
+
+.over .text {
+    width: 300px;
+}
 
 .card {
     position: relative;
@@ -330,16 +343,16 @@ h2 {
     flex-direction: column;
     justify-content: center;
     gap: 30px;
-  }
-  
-  .image1 {
+}
+
+.image1 {
     display: block;
     width: 70%;
     height: auto;
     margin: 0 auto;
-  }
-  
-  .over {
+}
+
+.over {
     display: flex;
     flex-direction: column;
     position: absolute;
@@ -353,14 +366,14 @@ h2 {
     opacity: 0;
     transition: .5s ease;
     background-color: #ffffff;
-  }
-  
-  .card:hover .over {
+}
+
+.card:hover .over {
     opacity: 1;
-   
-  }
-  
-  .text {
+
+}
+
+.text {
     font-family: "Outfit";
     color: var(--laranja-indgame);
     font-size: 25px;
@@ -371,38 +384,41 @@ h2 {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
-  }
-  .nome1 {
-    font-family: "Outfit";
-    text-align: center;
-    color: var(--laranja-indgame);
-    font-size: 20px;
-  }
+}
 
-  .nome2 {
+.nome1 {
     font-family: "Outfit";
     text-align: center;
     color: var(--laranja-indgame);
     font-size: 20px;
-  }
-  .nome3{
-    font-family: "Outfit";
-    text-align: center;
-    color: var(--laranja-indgame);
-    font-size: 20px;
-  }
+}
 
-  img.estrelas {
-    display: flex;
-    justify-content: center;
-  }
+.nome2 {
+    font-family: "Outfit";
+    text-align: center;
+    color: var(--laranja-indgame);
+    font-size: 20px;
+}
+
+.nome3 {
+    font-family: "Outfit";
+    text-align: center;
+    color: var(--laranja-indgame);
+    font-size: 20px;
+}
+
+img.estrelas {
+    padding-top: 320px;
+    width: 45%;
+    margin: 0 auto;
+}
 
 
 
 
 /*formulario*/
 
- #contato{
+#contato {
     padding-top: 200px;
     text-align: center;
     padding-bottom: 100px;
@@ -411,7 +427,7 @@ h2 {
 
 }
 
-#contato form{
+#contato form {
     background-color: var(--laranja-indgame);
     width: 40%;
     margin: 0 auto;
@@ -424,16 +440,18 @@ h2 {
     font-family: "Outfit";
     font-size: 17px;
     margin-top: 80px;
-    
+
 }
-.campo{
+
+.campo {
     width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    margin-bottom: 50px    ;
+    margin-bottom: 50px;
 }
+
 .campo-descricao {
     width: 60%;
     text-align: left;
@@ -443,29 +461,35 @@ h2 {
     margin-bottom: 30px;
 
 }
-.campo input{
+
+.campo input {
     height: 40px;
-    color:black;
+    color: black;
     background-color: white;
     border: none;
     border-radius: 10px;
     outline: none;
     text-indent: 10px;
-    
+
 }
-.campo input::placeholder, .campo-descricao textarea::placeholder{
+
+.campo input::placeholder,
+.campo-descricao textarea::placeholder {
     color: #a0a0a0;
 }
 
-.campo input, .campo-descricao textarea{
+.campo input,
+.campo-descricao textarea {
     font-family: "Outfit";
     font-size: 17px;
 }
-.campo input:focus{
+
+.campo input:focus {
     outline: 3px solid var(--azul-indgame);
 }
-.campo-descricao textarea:focus{
-    outline: 3px solid  var(--azul-indgame);
+
+.campo-descricao textarea:focus {
+    outline: 3px solid var(--azul-indgame);
 }
 
 .campo-descricao textarea {
@@ -476,13 +500,16 @@ h2 {
     outline: none;
     resize: none;
     padding: 5px;
-    
+
 
 }
-.campo label, .campo-descricao label{
+
+.campo label,
+.campo-descricao label {
     margin-bottom: 15px;
 }
-#contato form button{
+
+#contato form button {
     height: 40px;
     width: 30%;
     background-color: var(--azul-indgame);
@@ -495,7 +522,8 @@ h2 {
     cursor: pointer;
     transition: background-color 500ms;
 }
-#contato form button:hover{
+
+#contato form button:hover {
     background-color: #2E90DB;
 }
 
@@ -506,10 +534,10 @@ h2 {
     width: 500px;
     text-align: left;
     padding-left: 150px;
-    font-weight: bold  ;
+    font-weight: bold;
 }
 
-.texto-seta{
+.texto-seta {
     display: flex;
     flex-direction: column;
     gap: 50px;
@@ -522,63 +550,181 @@ h2 {
 
 
 
-/* contate-nos*/ 
+/* contate-nos*/
 
 .container-contato {
     display: flex;
     flex-direction: column;
     gap: 30px;
-}  
+}
 
 .container-caixa {
     display: flex;
     justify-content: center;
+    padding-bottom: 80px;
 }
-.caixa{
+
+.caixa {
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: left;
-    margin-bottom: 50px    ;
+    margin-bottom: 50px;
     border: 2px solid var(--laranja-indgame);
     border-radius: 10px;
 }
 
-.caixa input{
+.caixa input {
     height: 40px;
-    color:black;
+    color: black;
     background-color: white;
     border: var(--azul-indgame);
     border-radius: 10px;
     outline: none;
     text-indent: 10px;
-    
+
 }
 
 
-.caixa input, .campo-descricao textarea{
+.caixa input,
+.campo-descricao textarea {
     font-family: "Outfit";
     font-size: 17px;
 }
-.caixa input:focus{
+
+.caixa input:focus {
     outline: 2.5px solid #d26e20;
 }
 
 
 
 /*footer*/
-footer{
+footer {
     background-image: url(img/footer\ 1.png);
-    height: 300px;
+    height: 200px;
+    width: 1519px;
     background-repeat: no-repeat;
+    background-position: 90%;
+    padding: 40px;
 }
 
-.background-image img {
-    width: 100%;
-}
 
 .redes-sociais img {
-    width: 20%;
+    width: 12%;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+
+}
+
+.redes-sociais p {
+    font-family: "Outfit";
+    color: white;
+
+}
+
+.icones-redes {
+    display: flex;
+    justify-content: space-between;
+    width: 390px;
+    align-items: center;
+}
+
+.container-grid {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.icones-redes svg {
+    height: 40px;
+    color: white;
+}
+
+.icones-redes svg:hover {
+    color: var(--azul-indgame);
+    transition: 500ms;
+}
+
+/* responsividade */
+
+@media screen and (max-width: 1300px) {
+    header img {
+        position: relative;
+    }
+
+    .banner img {
+        position: relative;
+    }
+
+    header button {
+        width: 50px;
+
+        display: unset;
+
+        background: none;
+        border: none;
+    }
+
+    header svg {
+        fill: white;
+    }
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: #000000b5;
+        position: absolute;
+        right: 0px;
+        top: 165px;
+    }
+
+    #sobre {
+        padding: 100px 15%;
+    }
+
+
+    #contato form {
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 1080px) {
+
+    header .img {
+        width: 30%;
+    }
+
+    .card {
+        height: 70;
+    }
+
+    #sobre {
+        flex-direction: column;
+    }
+
+    #sobre .texto {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    #sobre .imagem {
+        margin: 0 auto;
+    }
+
+    .text-row {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
 }
 
