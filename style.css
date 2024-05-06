@@ -48,7 +48,8 @@ header .container-grid {
 }
 
 header img {
-    padding-left: 20%;
+    display: flex;
+    align-items: center;
 }
 
 .menu {
@@ -132,9 +133,9 @@ h2 {
 }
 
 #mvv {
-    width: 1200px;
+ 
     height: 250px;
-    margin: auto;
+    
 }
 
 .text-row {
@@ -603,7 +604,7 @@ img.estrelas {
 footer {
     background-image: url(img/footer\ 1.png);
     height: 200px;
-    width: 1519px;
+    
     background-repeat: no-repeat;
     background-position: 90%;
     padding: 40px;
@@ -653,12 +654,10 @@ footer {
 
 @media screen and (max-width: 1300px) {
     header img {
-        position: relative;
+       width: 400px;
     }
 
-    .banner img {
-        position: relative;
-    }
+   
 
     header button {
         width: 50px;
@@ -673,6 +672,68 @@ footer {
         fill: white;
     }
 
+    footer {
+        width: unset;
+    }
+
+    #sobre {
+        padding: 100px 15%;
+    }
+
+
+    #contato form {
+        width: 45%;
+    }
+    .container-user {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 60px
+        ;
+    }
+
+    #sobre {
+        flex-direction: column;
+        align-items: center;
+        }
+
+        #sobre p {
+            padding-bottom: 70px;
+        }
+    
+    
+}
+
+@media screen and (max-width: 1080px) {
+
+    header img {
+        width: 800px;
+    }
+    
+    .banner {
+        height: 100vh;
+    }
+
+    #sobre {
+    flex-direction: column;
+    align-items: center;
+    }
+
+    #sobre p {
+        padding-bottom: 70px;
+    }
+
+    footer {
+        width: unset;
+    }
+    .container-user {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 60px
+        ;
+    }
+}
+
+@media screen and (max-width: 800px) {
     nav.menu {
         height: 500px;
         width: 350px;
@@ -686,45 +747,7 @@ footer {
         top: 165px;
     }
 
-    #sobre {
-        padding: 100px 15%;
+    header .container-grid {
+        width: unset;
     }
-
-
-    #contato form {
-        width: 45%;
-    }
-
 }
-
-@media screen and (max-width: 1080px) {
-
-    header .img {
-        width: 30%;
-    }
-
-    .card {
-        height: 70;
-    }
-
-    #sobre {
-        flex-direction: column;
-    }
-
-    #sobre .texto {
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    #sobre .imagem {
-        margin: 0 auto;
-    }
-
-    .text-row {
-        display: flex;
-        flex-direction: column;
-        margin: 0 auto;
-    }
-
-}
-
