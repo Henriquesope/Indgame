@@ -47,9 +47,16 @@ header .container-grid {
     width: 1000px;
 }
 
-header img {
+.container-imgb {
+    text-align: center;
     display: flex;
-    align-items: center;
+    justify-content: center;
+}
+
+header img {
+   width: 70%;
+   
+    
 }
 
 .menu {
@@ -102,7 +109,7 @@ h2 {
 }
 
 #sobre img {
-    height: 450px;
+    
     width: 480px;
 }
 
@@ -653,9 +660,7 @@ footer {
 /* responsividade */
 
 @media screen and (max-width: 1300px) {
-    header img {
-       width: 400px;
-    }
+   
 
    
 
@@ -677,7 +682,7 @@ footer {
     }
 
     #sobre {
-        padding: 100px 15%;
+        padding: 10px 15%;
     }
 
 
@@ -704,9 +709,26 @@ footer {
 }
 
 @media screen and (max-width: 1080px) {
+    nav.menu {
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: #000000b5;
+        position: absolute;
+        right: 0px;
+        top: 165px;
+    }
+
+    .seta-form img {
+        display: none;
+    }
 
     header img {
-        width: 800px;
+        width: 60%;
+        align-items: center;
     }
     
     .banner {
@@ -731,23 +753,145 @@ footer {
         gap: 60px
         ;
     }
+    header .container-grid {
+        width: unset;
+    }
+
+    #contato {
+        flex-direction: column;
+        padding-top: 100px;
+    }
+
+    .descricao {
+        text-align: center;
+        margin: 0 auto;
+        padding-left: unset;
+    }
+    
+    #contato form {
+        margin-top: unset;
+    }
+    .redes-sociais img {
+        width: 15%;
+    }
+    .redes-sociais {
+        flex-direction: column;
+        padding-top: 40px;
+    }
 }
 
 @media screen and (max-width: 800px) {
-    nav.menu {
-        height: 500px;
-        width: 350px;
+  
+    .banner {
+        height: 70vh;
+    }
+ 
+    #contato form {
+        width: 60%;
+    }
+    
+    .caixa {
+        width: 50%;
+    }
+    .redes-sociais img {
+        width: 20%;
+    }
+}
 
-        padding: 0px 30px;
-        justify-content: space-around;
-        flex-direction: column;
-        background-color: #000000b5;
-        position: absolute;
-        right: 0px;
-        top: 165px;
+@media screen and (max-width: 700px) {
+    .banner {
+        height: 60vh;
+    }
+    header .container-grid {
+        height: 50%;
     }
 
-    header .container-grid {
-        width: unset;
+    h2 {
+        font-size: 25px
+    }
+    #sobre p {
+        font-size: 17px;
+    }
+
+    #sobre img {
+        width: 70%;
+        margin: 0 auto;
+    }
+    .imagem {
+        display: flex;
+        justify-content: center;
+    }
+
+    #historia p {
+        font-size: 17px;
+    }
+
+    .text-column p {
+        font-size: 17px;
+    }
+    
+    .text-column-v p {
+        font-size: 17px;
+    }
+    .text-column-ss p {
+        font-size: 17px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .container {
+        width: 70%;
+        
+    }
+
+    #contato form {
+        width: 60%;
+        height: 80%;
+    }
+
+    .redes-sociais img {
+        display: none;
+    }
+    nav.menu {
+        height: 70%;
+    }
+
+    .descricao {
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+    #sobre p {
+        width: 400px;
+    }
+
+    #contato {
+        margin-bottom: unset;
+    }
+
+    #contato form{
+        width: 100%;
+        border-radius: 0;
+    }
+    .redes-sociais p {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .banner {
+        height: 40vh;
+    }
+
+    .descricao {
+        width: 300px;
+    }
+
+    #historia p {
+        width: 300px;
     }
 }
