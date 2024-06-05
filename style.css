@@ -657,13 +657,43 @@ footer {
     transition: 500ms;
 }
 
+
+.menu-fechado {
+    display: none;
+}
+
+#icone-barras {
+    display: none;
+    justify-content: end    ;
+}
+
+
 /* responsividade */
 
 @media screen and (max-width: 1300px) {
+
+    .banner {
+        height: 200vh;
+    }
+    header {
+        position: relative;
+    }
+
+    nav.menu {
+        height: 500px;
+        width: 350px;
+
+        padding: 0px 30px;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: var(--laranja-indgame);
+        position: absolute;
+        right: 0px;
+        top: 165px;
+    }
    
 
    
-
     header button {
         width: 50px;
 
@@ -701,27 +731,22 @@ footer {
         align-items: center;
         }
 
-        #sobre p {
+    #sobre p {
             padding-bottom: 70px;
         }
     
-    
-}
-
-@media screen and (max-width: 1080px) {
-    nav.menu {
-        height: 500px;
-        width: 350px;
-
-        padding: 0px 30px;
-        justify-content: space-around;
-        flex-direction: column;
-        background-color: #000000b5;
-        position: absolute;
-        right: 0px;
-        top: 165px;
+    .menu-fechado {
+            display: none;
+        }
+        
+     #icone-barras {
+            display: none;
+            justify-content: end    ;
+        }
+              
     }
 
+@media screen and (max-width: 1080px) {
     .seta-form img {
         display: none;
     }
@@ -732,7 +757,7 @@ footer {
     }
     
     .banner {
-        height: 100vh;
+        height: 130vh;
     }
 
     #sobre {
